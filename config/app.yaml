@@ -1,2 +1,0 @@
-mysql: 
-  dns: user:123456@tcp(43.143.231.157:3306)/chat?charset=utf8mb4&parseTime=True&loc=Local

@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-  db, err := gorm.Open(mysql.Open("user:123456@tcp(43.143.231.157:3306)/chat?charset=utf8mb4&parseTime=True&loc=Local"), &gorm.Config{})
+  db, err := gorm.Open(mysql.Open("root:123456@tcp(localhost:3307)/chat?charset=utf8mb4&parseTime=True&loc=Local"), &gorm.Config{})
   if err != nil {
     panic("failed to connect database")
   }
