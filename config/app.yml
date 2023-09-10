@@ -1,3 +1,8 @@
-mysql: 
+mysql:
   dns: root:123456@tcp(localhost:3307)/chat?charset=utf8mb4&parseTime=True&loc=Local
- 
+log:
+  max_size: 200   #日志文件最大的尺寸(M)，超限后自动开始分割
+  max_age: 30     #保留旧文件的最大天数
+  max_backups: 7  #保留旧文件的最大个数
+mode:
+  develop: true

@@ -1,15 +1,16 @@
 package main
 
 import (
+	"chat/dao"
+	"chat/logger"
 	"chat/router"
-
-	"chat/utils"
 )
 
 
 func main() {
-	utils.InitConfig()
-	utils.InitMySQL()
+	dao.InitConfig()
+	dao.InitMySQL()
+	logger.Logger = logger.InitLogger()
 	r := router.Router()
 	r.Run(":8082")
 }

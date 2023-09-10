@@ -1,8 +1,9 @@
 package router
 
 import (
-	"chat/service"
+	"chat/controller"
 	"chat/docs"
+	"chat/service"
 
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files"
@@ -14,11 +15,38 @@ func Router() *gin.Engine {
 	docs.SwaggerInfo.BasePath = ""
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
-	//首页
+	//------------首页------------
 	r.GET("/index", service.GetIndex)
+	//r.GET("/toRegister", service.ToRegister)
+	//r.GET("/toChat", service.ToChat)
+	//r.GET("/chat", service.Chat)
+	//r.POST("/searchFriends", service.SearchFriends)
 	
-	//用户模块
-	r.POST("/user/getUserList", service.GetUserList)
-	r.POST("/user/createUser", service.CreateUser)
+	//------------用户模块------------
+	//获取用户列表
+	r.POST("/user/getUserList", controller.GetUserListHandler)
+	//创建用户
+	r.POST("/user/createUser", controller.CreateUserHandler)
+	//修改用户数据
+	r.POST("/user/updateUser", controller.UpdateUserHandler)
+	//r.POST("/user/deleteUser", service.DeleteUser)
+	//r.POST("/user/findUserByNameAndPwd", service.FindUserByNameAndPwd)
+	//r.POST("/user/find", service.FindByID)
+	//发送消息
+	//r.GET("/user/sendMsg", service.SendMsg)
+	//发送消息
+	//r.GET("/user/sendUserMsg", service.SendUserMsg)
+	//添加好友
+	//r.POST("/contact/addfriend", service.AddFriend)
+	//上传文件
+	//r.POST("/attach/upload", service.Upload)
+	//创建群
+	//r.POST("/contact/createCommunity", service.CreateCommunity)
+	//群列表
+	//r.POST("/contact/loadcommunity", service.LoadCommunity)
+	//r.POST("/contact/joinGroup", service.JoinGroups)
+	//心跳续命 不合适  因为Node  所以前端发过来的消息再receProc里面处理
+	// r.POST("/user/heartbeat", service.Heartbeat)
+	//r.POST("/user/redisMsg", service.RedisMsg)
 	return r
 }

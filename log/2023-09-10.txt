@@ -1,0 +1,18 @@
+{"level":"ERROR","time":"2023-09-10 21:01:16","msg":"service.CreateUser failed{error 26 0  用户已存在}"}
+{"level":"ERROR","time":"2023-09-10 21:02:05","msg":"service.CreateUser failed{error 26 0  用户已存在}"}
+{"level":"ERROR","time":"2023-09-10 21:02:42","msg":"service.CreateUser failed{error 26 0  用户已存在}"}
+{"level":"ERROR","time":"2023-09-10 21:02:50","msg":"service.CreateUser failed{error 26 0  两次密码不一致}"}
+{"level":"ERROR","time":"2023-09-10 21:02:54","msg":"service.CreateUser failed{error 26 0  两次密码不一致}"}
+{"level":"ERROR","time":"2023-09-10 21:03:05","msg":"service.CreateUser failed{error 26 0  两次密码不一致}"}
+{"level":"ERROR","time":"2023-09-10 21:03:15","msg":"CreateUserHandler with invalid param{error 26 0  用户名或密码不能为空！}"}
+{"level":"ERROR","time":"2023-09-10 21:03:21","msg":"CreateUserHandler with invalid param{error 26 0  用户名或密码不能为空！}"}
+{"level":"ERROR","time":"2023-09-10 21:05:35","msg":"CreateUserHandler with invalid param{error 26 0  用户名或密码不能为空！}"}
+{"level":"ERROR","time":"2023-09-10 21:12:30","msg":"service.UpdateUser failed{error 26 0  该用户不存在}"}
+{"level":"ERROR","time":"2023-09-10 21:12:38","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:13:03","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:13:13","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:13:39","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:14:10","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:14:40","msg":"UpdateUserHandler with invalid param{ 27 0  <nil>}"}
+{"level":"ERROR","time":"2023-09-10 21:19:08","msg":"UpdateUserHandler with invalid param请求参数错误"}
+{"level":"ERROR","time":"2023-09-10 21:23:44","msg":"service.UpdateUser failed{error 26 0  用户名已存在}"}
